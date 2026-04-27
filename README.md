@@ -24,16 +24,28 @@ Création d'une mesure rapide pour le taux de croissance mensuel (CA MoM%).
 
 Exemple de formule DAX employées :
 
-% attrition_client = [Nb_client_acheteur]/[Nb_client]
+```dax
+
+ % attrition_client = [Nb_client_acheteur]/[Nb_client]
 
 CA = SUM(Transactions[price (normalisé)])
 
 Nb_client_acheteur = DISTINCTCOUNT(Transactions[customer_id])
 
+```
 Création également d'une table calculée à l'aide de la formule suivante :
 
-Transaction_client = SUMMARIZE(Transactions,Transactions[Date transaction],Transactions[customer_id],"Nb-article", COUNTROWS(Transactions),"Nb-articles-distinct", DISTINCTCOUNT(Transactions[article_id]),"Total",SUM(Transactions[price (normalisé)]))
-
+```dax
+Transaction_client = 
+SUMMARIZE(
+    Transactions,
+    Transactions[Date transaction],
+    Transactions[customer_id],
+    "Nb-article", COUNTROWS(Transactions),
+    "Nb-articles-distinct", DISTINCTCOUNT(Transactions[article_id]),
+    "Total", SUM(Transactions[price (normalisé)])
+)
+```
 Afin de savoir pour chaque client et date de transaction le nombre d'articles achetés et la somme dépensée.
 
 ## Analyses et Insights (Ce que vous avez trouvé)
@@ -63,8 +75,11 @@ Ce rapport Power BI se décompose en trois axes stratégiques comme le montre la
 <img width="1076" height="603" alt="image" src="https://github.com/user-attachments/assets/11e005f6-8e49-4398-b7fe-59a1ef6ca723" />
 
 🛠️ Compétences techniques démontrées
-Modélisation de données : Création d'un schéma en étoile pour lier les ventes, les produits et les clients.
+
+Modélisation de données : Création d'un schéma en flocon  pour lier les ventes, les produits et les clients.
+
 DAX (Data Analysis Expressions) : Création de mesures pour le panier moyen (0,10) et la variation du CA.
+
 Data Visualisation : Utilisation de Treemaps, graphiques de rubans (Ribbon charts) pour la fréquentation, et jauges de KPI.
 
 ## Comment utiliser ce report
