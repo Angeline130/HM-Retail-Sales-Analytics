@@ -1,11 +1,18 @@
 # HM-Retail-Sales-Analytics
 Analyse globale de la performance, des produits et du comportement client (2018-2020)
 
-🔗 Liens
-Jeu de données : https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/data
+## 🎯 Objectif
 
-## Problématique Métier
-Comment optimiser les stocks et le marketing d'une enseigne de mode en exploitant les données clients et les transactions articles ?
+Analyser la performance commerciale, les produits et le comportement client afin d’optimiser les stocks et les stratégies marketing d’une enseigne de mode.
+
+## 🛠️ Stack technique
+Power BI (dashboard & data visualisation)
+DAX (mesures KPI)
+Power Query (transformation des données)
+
+## 📊 Données
+Source : dataset Kaggle (transactions, clients, produits)
+Périmètre : ~1,3M clients / ventes multi-canales (online & magasin)
 
 ## Architecture des Données 
 
@@ -16,6 +23,19 @@ Comment optimiser les stocks et le marketing d'une enseigne de mode en exploitan
 3. Modélisation : Schéma en flocon de neige avec une table de faits (Transactions) et des tables de dimensions (Produits, Clients, Temps).
    
 <img width="1067" height="697" alt="image" src="https://github.com/user-attachments/assets/a29bdeb8-8ca4-4aa5-bfb4-ff777877c7ef" />
+
+## 🔍 Réalisations
+Construction d’un dashboard Power BI structuré en 3 axes :
+- Performance commerciale
+- Analyse produit
+- Analyse client
+Création de mesures DAX :
+- chiffre d’affaires (CA)
+- nombre de clients / clients actifs
+- taux d’activation
+- évolution du CA (MoM)
+- Analyse des comportements d’achat par segment client
+- Étude des performances produits (volume vs rentabilité)
 
 ## Focus DAX
 Création d'une table contenant toutes les mesures DAX.
