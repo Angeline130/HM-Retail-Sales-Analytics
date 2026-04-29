@@ -6,12 +6,17 @@ Analyse globale de la performance, des produits et du comportement client (2018-
 Analyser la performance commerciale, les produits et le comportement client afin d’optimiser les stocks et les stratégies marketing d’une enseigne de mode.
 
 ## 🛠️ Stack technique
+
 Power BI (dashboard & data visualisation)
+
 DAX (mesures KPI)
+
 Power Query (transformation des données)
 
 ## 📊 Données
+
 Source : dataset Kaggle (transactions, clients, produits)
+
 Périmètre : ~1,3M clients / ventes multi-canales (online & magasin)
 
 ## Architecture des Données 
@@ -78,7 +83,7 @@ De plus, les ventes en magasins rapportent plus que les ventes en lignes.
 Une saisonnnalité des ventes est observée. Elles sont plus nombreuses en Septembre et de Mars à Juin. Le pic de septembre correspond probablement aux stratégies de "Back to school" ou de changement de collection.
 Enfin, les produits les plus vendus en quantité ne sont pas ceux qui rapportent le plus d'argent.
 
-### 📊 Aperçu du Dashboard
+## 📊 Aperçu du Dashboard
 Ce rapport Power BI se décompose en trois axes stratégiques comme le montre la page d'accueil permettant la navigation entre nos 3 grands axes :
 <img width="1082" height="607" alt="image" src="https://github.com/user-attachments/assets/f5ca5bdb-6d24-4a89-8ff2-138314a4ffaa" />
 
@@ -94,7 +99,7 @@ Ce rapport Power BI se décompose en trois axes stratégiques comme le montre la
 
 <img width="1076" height="603" alt="image" src="https://github.com/user-attachments/assets/11e005f6-8e49-4398-b7fe-59a1ef6ca723" />
 
-🛠️ Compétences techniques démontrées
+## 🛠️ Compétences techniques démontrées
 
 Modélisation de données : Création d'un schéma en flocon  pour lier les ventes, les produits et les clients.
 
